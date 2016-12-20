@@ -1,0 +1,34 @@
+{
+    "pictures": [ "12","22","32","42","31","33"],
+    "location": "12",
+    "direction": "N",
+    "skin": [
+        {
+            "picker": "ball.png"
+            "item_list": [
+                "pikaqiu.png",
+                "miaowazhongzi.png",
+                "jienigui.png",
+                "xiaohuolong.png"
+            ]
+        },
+        {
+            "picker": "caomao.png"
+            "item_list": [
+                "lufei.png",
+                "suolong.png",
+                "xiangjishi.png",
+                "qiaoba.png"
+            ]
+        },
+        {
+            "picker": "dragon_ball.png"
+            "item_list": [
+                "sunwukong.png",
+                "keling.png",
+                "duandi.png",
+                "buou.png"
+            ]
+        }
+    ]
+}

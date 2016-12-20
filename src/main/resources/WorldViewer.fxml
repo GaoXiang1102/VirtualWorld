@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="830.0" maxWidth="1300.0" minHeight="830.0" minWidth="1300.0" prefHeight="830.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WorldController">
+   <children>
+      <MenuBar layoutX="7.0" layoutY="6.0" prefHeight="50.0" prefWidth="1300" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu fx:id="state" mnemonicParsing="false"  text="STATE" >
+               <items>
+                  <MenuItem onAction="#restart" mnemonicParsing="false" text="RESTART" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+
+      <AnchorPane fx:id="photo_panel" layoutX="0.0" layoutY="50.0" prefHeight="500.0" prefWidth="1000.0" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fx:id="photo" fitHeight="500.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ImageView fx:id="turn_left" fitHeight="60.0" fitWidth="60.0" layoutX="205.0" layoutY="345.0" onMouseClicked="#turn_left" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="300.0" />
+            <ImageView fx:id="turn_right" fitHeight="60.0" fitWidth="60.0" onMouseClicked="#turn_right" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="640.0" />
+            <ImageView fx:id="go_button" fitHeight="80.0" fitWidth="80.0" layoutX="387.0" layoutY="45.0" onMouseClicked="#move_forword" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="460.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="map_panel" layoutX="1000.0" layoutY="50.0" prefHeight="500.0" prefWidth="300.0" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="1000.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fx:id="map" fitHeight="500.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ImageView fx:id="position_label" fitHeight="60.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="item1" fitHeight="200.0" fitWidth="200.0" layoutX="500.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item2" fitHeight="200.0" fitWidth="200.0" layoutX="700.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item3" fitHeight="200.0" fitWidth="200.0" layoutX="900.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item4" fitHeight="200.0" fitWidth="200.0" layoutX="1100.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="picker" fitHeight="200.0" fitWidth="200.0" layoutX="250.0" layoutY="600.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pokemon_logo" fitHeight="100.0" fitWidth="220.0" layoutX="15.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#change_pokemon"/>
+      <ImageView fx:id="one_piece_logo" fitHeight="100.0" fitWidth="220.0" layoutX="15.0" layoutY="650.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#change_one_piece"/>
+      <ImageView fx:id="dragon_ball_logo" fitHeight="100.0" fitWidth="220.0" layoutX="15.0" layoutY="740.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#change_dragon_ball" />
+   </children>
+</AnchorPane>
